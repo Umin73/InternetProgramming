@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'titleFont';
+  src: url("./font/NEXONLV1GOTHICBOLD.TTF") format('truetype');
+}
+
+@font-face {
+  font-family: 'basicFont';
+  src: url("./font/NEXONLV1GOTHICLIGHT.TTF") format('truetype');
+}
+
+h1{
+  font-family: 'titleFont';
+  color: #383838;
+}
+
+*{
+  font-family: 'basicFont';
+  color: #4a4a4a;
+  list-style: none;
+  text-decoration: none;
+}
+
+table, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+a:hover{
+  font-size: 110%;
+}
