@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'titleFont';
+  src: url("./font/NEXONLV1GOTHICBOLD.TTF") format('truetype');
+}
+
+@font-face {
+  font-family: 'basicFont';
+  src: url("./font/NEXONLV1GOTHICLIGHT.TTF") format('truetype');
+}
+
+h1{
+  font-family: 'titleFont';
+  color: #383838;
+}
+
+*{
+  font-family: 'basicFont';
+  color: #4a4a4a;
+  list-style: none;
+  text-decoration: none;
+}
+
+table, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+a:hover{
+  font-size: 110%;
+}
+
+#textBox{
+  margin-right: 10px;
+}
+
+#memo p{
+  border-style: dotted;
+  padding: 20px;
+  margin: 25px;
+  width:fit-content;
+  background-color: #f7f5f5;
+  border-color: #767676;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #7a7a7af0;
+  overflow: hidden;
+}
+
+#memo img{
+  width: 150px;
+  overflow: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+#favorite ul{
+  border-style: dotted;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin: 25px;
+  width: 650px;
+  background-color: #f9f9f9;
+  border-color: #767676;
+  border-radius: 10px;
+}
+
+#main img{
+  float: left; 
+  padding-right: 25px;
+  padding-left: 25px;
+}
