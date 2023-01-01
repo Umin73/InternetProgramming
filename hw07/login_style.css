@@ -1,0 +1,23 @@
+#login input{
+  text-align: left;
+  width:225px;
+  height:30px;
+  border: none;
+  border-bottom: solid 3px black;
+}
+
+#login button{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background: white;
+}
+
+#login p{
+  font-size: small;
+  display: inline-block;
+}
+
+#login p.hint{
+  opacity: 0.2;
+}
