@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<script src="../../jquery-3.6.3.js"></script>
+<link rel="stylesheet" href="../../css/basic_style.css">
+<script>
+  $(document).ready(function () {
+
+    $('#chk_true').hide();
+    $('#chk_false').hide();
+
+    if ($('#pw_check').val) {
+      $('#chk_true').hide();
+      $('#chk_false').hide();
+    }
+
+    $('#pw_check').keyup(function () {
+
+      if ($('#pw').val() == $('#pw_check').val()) {
+        $('#chk_true').show();
+        $('#chk_false').hide();
+      }
+      else if ($('#pw').val() != $('#pw_check').val()) {
+        $('#chk_true').hide();
+        $('#chk_false').show();
+      }
+    });
+
+    $('#pw_check').val().empty(function () {
+      $('#chk_true').hide();
+      $('#chk_false').hide();
+    });
+
+  });
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+</head>
+
+<body style="background-color: #fff0f5;">
+  <div align="center" id="form">
+    <h1>회원가입</h1>
+    <table>
+      <tr>
+        <td style="width: 110px;">아이디</td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>비밀번호</td>
+        <td><input type="password" id="pw"></td>
+      </tr>
+      <tr>
+        <td>비밀번호 확인</td>
+        <td><input type="password" id="pw_check"></td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td><input type="email"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <small id="chk_true" style="color: blue;">비밀번호가 일치합니다</small>
+          <small id="chk_false" style="color: red;">비밀번호가 일치하지 않습니다</small>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button class="join"><a href="./mainPage.html">회원가입</a></button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

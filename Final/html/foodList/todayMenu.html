@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../../css/basic_style.css">
+<link rel="stylesheet" href="../../css/food_style.css">
+<script src="../../JS/random.js"></script>
+
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>오늘의 메뉴 추천</title>
+</head>
+
+<body>
+  <header id="header">
+    <ul>
+      <li><a href="../default/mainPage.html">메인</a></li> |
+      <li><a href="../foodList/foodList.html">맛집</a></li> |
+      <li><a href="../default/login.html">로그인</a></li> |
+      <li><a href="../default/login.html">회원가입</a></li>
+    </ul>
+    <br><br>
+    <h1>오늘의 메뉴 추천</h1>
+  </header>
+  <section>
+    <div id="wrapper" align="center">
+      <p>먹고싶은 음식의 종류를 선택하세요!</p>
+      <select id="select_value">
+        <option value="한식" selected>한식</option>
+        <option value="중식">중식</option>
+        <option value="일식">일식</option>
+        <option value="양식">양식</option>
+        <option value="분식">분식</option>
+        <option value="고기">고기</option>
+        <option value="카페/디저트">카페/디저트</option>
+        <option value="기타">기타</option>
+      </select>
+      <button id="btn" onclick="recommend()">메뉴 추천받기</button>
+      <br><br>
+      <h3 id="msg" style="color: #ff96bd;"></h3>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <p>20200446 컴퓨터학과 조유민</p>
+    <p>인터넷프로그래밍 기말과제</p>
+  </footer>
+</body>
+
+</html>
